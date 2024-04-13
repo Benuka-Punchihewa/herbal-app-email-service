@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('Clone App'){
             steps{
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'e5dd8867-c8cd-4577-bfe2-6b36f77a7f7f', url: 'git@github.com:Benuka-Punchihewa/herbal-app-email-service.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-credentials', url: 'git@github.com:Benuka-Punchihewa/herbal-app-email-service.git']]])
             }
         }
 
