@@ -30,7 +30,7 @@ pipeline {
                         dir('kubernetes_config') {
                             sh 'kubectl apply -f email-config.yaml'
                             sh 'kubectl apply -f email.yaml'
-                        }email
+                        }
                     }
                 }
             }
